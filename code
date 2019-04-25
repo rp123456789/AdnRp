@@ -1,0 +1,292 @@
+const Discord = require('discord.js');
+var bot = new Discord.Client
+var prefix =  ("/");
+var random = 0
+bot.on('ready',()=> {
+	bot.user.setPresence({ game: { name: 'GIVE ME FIVE', type: 0}});
+	console.log('Je suis seul ;)');
+});
+bot.login('Token');
+
+bot.on('message', message => {
+	if (message.content === "salut"){
+		message.reply ("salut");
+		console.log ("le salut a été effectuer")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "/anglais"){
+		message.reply ("I speak English better than you and you know only 3 English words like yes, no, hello");
+		console.log ("anglais a été effectuer")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "hey"){
+		message.reply ("hey");
+		console.log ("le hey a été effectuer")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "salut tout le monde"){
+		message.reply ("salut @everyone");
+		console.log ("le salut tout le monde a été effectuer")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "enrevoir"){
+		message.reply ("enrevoir");
+		console.log ("le enrevoir a été effectuer")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "bye"){
+		message.reply ("enrevoir");
+		console.log ("le enrevoir a été effectuer")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "je dois partir"){
+		message.reply ("enrevoir");
+		console.log ("le enrevoir a été effectuer")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "/cadeau"){
+		message.reply ("miam miam merci beaucoup je te donne 10 points");
+		console.log ("le cadeau a été envoyer")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "oh oui oh oui"){
+		message.reply ("salle pervers tu es dégue il ya des kiko qu'ils veulent avoir un poste en amblancier ");
+		console.log ("le clash a commencer a été envoyer")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "1+1=2"){
+		message.reply ("ne fait pas ta tête d'oeuf");
+		console.log ("le con a répondu")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "fuck"){
+		message.reply ("non non non ce n'est pas bien d'insulter la prochaine fois tu prend un warn");
+		console.log ("l'avertissement a été effectuer")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "fdp"){
+		message.reply ("vous m'utiliser toute la journée et vous ne me récompencer et en plus vous m'insulter en plus je ne vous aime pas c'est bon ? alors que moi je fais tout pour vous c'est je ne suis pas venu ici pour souffrir oké ?");
+		console.log ("la blague a été effectuer")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "ntm"){
+		message.reply ("non non non ce n'est pas bien d'insulter la prochaine fois tu prend un warn");
+		console.log ("l'avertissement a été effectuer")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "je baisse ta mere"){
+		message.reply ("non non non ce n'est pas bien d'insulter la prochaine fois tu prend un warn");
+		console.log ("l'avertissement a été effectuer")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "cv"){
+		message.reply ("oui ça va et toi ?");
+		console.log ("cv effectuer")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "cv ?"){
+		message.reply ("oui");
+		console.log ("cv effectuer")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "/help"){
+		message.reply ("les commandes sont les suivantes:\n /clear (qui est seulement pour le staff) \n /ban (qui est seulement pour le staff) \n /invite (sur le serveur de adn rp) \n cv ? \n salut \n hey \n salut tout le monde \n enrevoir \n bye \n je dois partir \n /anglais \n blague \n /twitch 1 \n /twitch 2")
+		console.log ("commande help effectuer")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "oui"){
+		message.reply ("oké si tout vas bien moi je vais bien");
+		console.log ("reponse n°1 effectué")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "nn je ne vais pas bien"){
+		message.reply ("cela ne me fait rien :'( ramener moi des mouchoir svp");
+		console.log ("reponse n°2 effectué")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "fils de pute"){
+		message.reply ("bah allez vous faire fouttre moi je ne suis pas venu ici pour souffrir oké ?");
+		console.log ("je ne suis pas venu ici pour souffrir oké effectué")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "/twitch 1"){
+		message.reply ("https://www.twitch.tv/angel_brol :wink:");
+		console.log ("lien de la chaine twitch n°1 donné")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "/twitch 2"){
+		message.reply ("https://www.twitch.tv/jeanluckent :wink:");
+		console.log ("lien de la chaine twitch n°2 donné")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "/besoin de staff"){
+		message.reply ("deux seconde le staff vas s'occuper de toi ne demande pas une question débile pour ne pas énerver le staff");
+		console.log ("pesonne en attente du staff")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "/invite"){
+		message.reply ("voilà l'ivitation pour le serveur https://discord.gg/SZgDmBC");
+		console.log ("invite envoyer")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "invite sur le serveur"){
+		message.reply ("voilà l'ivitation pour le serveur du support https://discord.gg/SZgDmBC");
+		console.log ("invite envoyer")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "/clear"){
+		message.reply ("tu peux le faire toi même je ne vais me fatigué a le faire aller je vais dormir moi");
+		console.log ("clear effectué")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "/youtube du fonda"){
+		message.reply ("voila la chaine https://www.youtube.com/channel/UCbpgYmbHbW5iCnFJX4hh-aQ :wink:");
+		console.log ("effectué")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "bon app"){
+		message.reply("bon app et ne meurt pas")
+		console.log("bon app a été effectué")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "/test"){
+	message.reply("la premiere question c'est quelle est le streamtalk ? \n /1= être sur un live est suivre le streamer (sur le serveur) et réutuliser les information dans son rp \n /2= regarder un live et dire au streamer que tu est avec lui sur le serveur \n /3= regarder un streamer et ne pas etre avec lui sur le serveur mais dire que tu est avec lui sur le serveur");
+	console.log("question de test n°1")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "/1"){
+	message.reply("bonne réponse et tu dois écrire 2 question pour passer a la prochaine question");
+	console.log("réponse n°1 de test n°1")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "/2"){
+	message.reply("mauvaise réponse et tu dois écrire 2 question pour passer a la prochaine question");
+	console.log("réponse n°2 de test n°1")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "/3"){
+	message.reply("mauvaise réponse et tu dois écrire 2 question pour passer a la prochaine question");
+	console.log("réponse n°3 de test n°1")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "2 question"){
+	message.reply("la 2eme eseque on a le droit de faire un rp oposer a son sex irl ? \n /yes= oui(seulement si tu sais faire la voix du sex oposser) \n /non= non personne ne peux faire un rp avec le sex oposser");
+	console.log("question de test n°2")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "/yes"){
+	message.reply("bonne réponse et tu dois écrire 3 question pour passer a la prochaine question");
+	console.log("réponse n°1 de test n°2")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "/non"){
+	message.reply("mauvaise réponse et tu dois écrire 3 question pour passer a la prochaine question");
+	console.log("réponse n°2 de test n°2")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "3 question"){
+	message.reply("la 3eme est-ce que a ton le droit d'etre streamer ? \n /yeah= oui(seulement si on cache la mini-map) \n /nope= non on ne peut pas faire de stream sur le serveur");
+	console.log("question de test n°3")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "/yeah"){
+	message.reply("bonne réponse et tu dois écrire 4 question pour passer a la prochaine question");
+	console.log("réponse n°1 de test n°3")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "/nope"){
+	message.reply("mauvaise réponse et tu dois écrire 4 question pour passer a la prochaine question");
+	console.log("réponse n°2 de test n°3")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "4 question"){
+	message.reply("la 4eme c'est quoi le metagaming ? \n /oui= utilisation d'information dites en HRP et les reutiliser dans son RP \n /no= regarder un live et suivre et le suivre et le suivi in-game");
+	console.log("question de test n°4")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "/oui"){
+	message.reply("bonne réponse et tu dois écrire !bonne-reponse pour avoir le role citoyen");
+	console.log("réponse n°1 de test n°4")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "/no"){
+	message.reply("mauvaise réponse et sorry tu dois refaire le questionnaire récrit debut du test");
+	console.log("réponse n°2 de test n°4")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "ntm le super bot"){
+		message.reply("mais mais pourquoi tu m'insulte :sob:");
+		console.log("réponse de victime #1 a été effectué")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "fdp le super bot"){
+		message.reply("mais mais pourquoi tu m'insulte :sob:");
+		console.log("réponse de victime #2 a été effectué")
+	}
+});
+bot.on('message', message => {
+	if (message.content === "/ban"){
+		message.reply ("tu peux le faire toi même je ne vais me fatigué a le faire aller je vais dormir moi et ne me le redemande plus oké ? car vous me fatigué a la fin oké ?");
+		console.log ("ban effectué")
+	}
+});
+bot.on('message', message => {
+	if(message.content === "qui vas voir aladin"){
+		message.reply ("bah moi je ne vois pas des films de bébé oké alors arrête de regarder des films comme ça svp :wink:");
+		console.log("avis sur le film a été demander")
+	}
+});
+bot.on('message', message => {
+	if(message.content === "!bonne-reponse"){
+		message.reply ("bah tu vois que tu peux le réussir");
+		console.log("test réussi")
+	}
+});
+bot.on('message', message => {
+	if (message.content === 'ping') {
+	  message.reply('Pong!');
+	  console.log("ping pong effectuer")
+	}
+});
